@@ -8,8 +8,13 @@ This Python script performs several text processing tasks on a given input file 
 - Tokenizing it into sentences and words
 - Lowercasing and Stop word removal
 - Emoticons, Stemming and Lemmatization
+- Calculate word length and added with column name “length”
+- Create new column name “text2”
+- Use labelEncoder method to convert class target
+- Use CountVectorize to perform BOW
+- List Top 5 and bottom 5 of transform sample to show the results
 
-The processed results are saved into respective output files.
+The cleaned results are saved into respective output files.
 
 ---
 
@@ -33,6 +38,7 @@ The processed results are saved into respective output files.
 - **`numpy`**
 - **`pandas`**
 - **`string`**
+- **`sklearn`**
 
 ## Recommended Versions
 
@@ -42,8 +48,8 @@ The processed results are saved into respective output files.
 
 ### **Installation:**
 
-- clone the repository to local pc
+- clone the repository to local pc and install following packages
 
 ```python
-    pip install nltk, numpy, pandas
+    pip install nltk, numpy, pandas, sklearn
 ```
